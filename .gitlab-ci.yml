@@ -19,7 +19,7 @@ tests:
   stage: test
   script:
     - make test
-    - conda run -n simuling-dev coverage report  # for displaying coverage in job logs
+    - conda run -n simulint-dev coverage report  # for displaying coverage in job logs
   coverage: '/^TOTAL.+?(\d+\%)$/'
   artifacts:
     when: always
